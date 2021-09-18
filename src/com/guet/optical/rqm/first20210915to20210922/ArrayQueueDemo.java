@@ -118,7 +118,7 @@ class ArrayQueue {
 	public int getQueue() {
 		if (isEmpty()) {
 			// 队列为空，通过抛出异常来处理
-			throw new RuntimeException("队列为空，不能取数据！！");
+			throw new RuntimeException("队列为空，不能取数据！！");//【？为什么这里就使用抛出异常而前面的是直接输出】
 			// 注意：在这里不用写return，因为抛出异常之后，就停止了这个函数的运行？
 		}
 		front++;
